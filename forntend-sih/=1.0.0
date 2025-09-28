@@ -1,0 +1,27 @@
+Requirement already satisfied: openai in ./venv/lib/python3.13/site-packages (0.28.1)
+Collecting faiss-cpu
+  Downloading faiss_cpu-1.12.0-cp313-cp313-macosx_14_0_arm64.whl.metadata (5.1 kB)
+Requirement already satisfied: numpy in ./venv/lib/python3.13/site-packages (2.3.3)
+Collecting python-dotenv
+  Using cached python_dotenv-1.1.1-py3-none-any.whl.metadata (24 kB)
+Requirement already satisfied: requests>=2.20 in ./venv/lib/python3.13/site-packages (from openai) (2.32.5)
+Requirement already satisfied: tqdm in ./venv/lib/python3.13/site-packages (from openai) (4.67.1)
+Requirement already satisfied: aiohttp in ./venv/lib/python3.13/site-packages (from openai) (3.12.15)
+Requirement already satisfied: packaging in ./venv/lib/python3.13/site-packages (from faiss-cpu) (24.2)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./venv/lib/python3.13/site-packages (from requests>=2.20->openai) (3.4.3)
+Requirement already satisfied: idna<4,>=2.5 in ./venv/lib/python3.13/site-packages (from requests>=2.20->openai) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./venv/lib/python3.13/site-packages (from requests>=2.20->openai) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in ./venv/lib/python3.13/site-packages (from requests>=2.20->openai) (2025.8.3)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in ./venv/lib/python3.13/site-packages (from aiohttp->openai) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in ./venv/lib/python3.13/site-packages (from aiohttp->openai) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in ./venv/lib/python3.13/site-packages (from aiohttp->openai) (25.3.0)
+Requirement already satisfied: frozenlist>=1.1.1 in ./venv/lib/python3.13/site-packages (from aiohttp->openai) (1.7.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in ./venv/lib/python3.13/site-packages (from aiohttp->openai) (6.6.4)
+Requirement already satisfied: propcache>=0.2.0 in ./venv/lib/python3.13/site-packages (from aiohttp->openai) (0.3.2)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in ./venv/lib/python3.13/site-packages (from aiohttp->openai) (1.20.1)
+Downloading faiss_cpu-1.12.0-cp313-cp313-macosx_14_0_arm64.whl (3.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 3.4 MB/s  0:00:01
+Using cached python_dotenv-1.1.1-py3-none-any.whl (20 kB)
+Installing collected packages: python-dotenv, faiss-cpu
+
+Successfully installed faiss-cpu-1.12.0 python-dotenv-1.1.1

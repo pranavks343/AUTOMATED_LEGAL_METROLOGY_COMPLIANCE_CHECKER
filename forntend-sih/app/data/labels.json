@@ -1,0 +1,113 @@
+[
+  {
+    "label_id": "LABEL-TESTPR-250913-002-20250913183007",
+    "product_sku": "TESTPR-250913-002",
+    "label_format": "STANDARD",
+    "status": "APPROVED",
+    "created_by": "test_admin",
+    "created_date": "2025-09-13T18:30:07.292645",
+    "approved_by": "test_manager",
+    "approved_date": "2025-09-13T18:30:07.293025",
+    "width": 400,
+    "height": 300,
+    "background_color": "#FFFFFF",
+    "border_color": "#000000",
+    "border_width": 2,
+    "elements": [
+      {
+        "element_id": "LABEL-TESTPR-250913-002-20250913183007-product_name",
+        "element_type": "text",
+        "content": "Test Product - Premium Chocolate",
+        "position": [
+          20,
+          20
+        ],
+        "size": [
+          200,
+          30
+        ],
+        "font_size": 12,
+        "font_color": "#000000",
+        "background_color": null,
+        "is_mandatory": true,
+        "compliance_checked": true,
+        "validation_message": "Compliance check passed"
+      },
+      {
+        "element_id": "LABEL-TESTPR-250913-002-20250913183007-mrp",
+        "element_type": "text",
+        "content": "MRP: \u20b9299.99",
+        "position": [
+          20,
+          60
+        ],
+        "size": [
+          100,
+          25
+        ],
+        "font_size": 12,
+        "font_color": "#000000",
+        "background_color": null,
+        "is_mandatory": true,
+        "compliance_checked": true,
+        "validation_message": "Compliance check passed"
+      },
+      {
+        "element_id": "LABEL-TESTPR-250913-002-20250913183007-net_quantity",
+        "element_type": "text",
+        "content": "Net Qty: 100.0 g",
+        "position": [
+          20,
+          90
+        ],
+        "size": [
+          150,
+          25
+        ],
+        "font_size": 12,
+        "font_color": "#000000",
+        "background_color": null,
+        "is_mandatory": true,
+        "compliance_checked": true,
+        "validation_message": "Compliance check passed"
+      },
+      {
+        "element_id": "LABEL-TESTPR-250913-002-20250913183007-manufacturer",
+        "element_type": "text",
+        "content": "Test Chocolate Co.",
+        "position": [
+          20,
+          120
+        ],
+        "size": [
+          200,
+          25
+        ],
+        "font_size": 12,
+        "font_color": "#000000",
+        "background_color": null,
+        "is_mandatory": true,
+        "compliance_checked": true,
+        "validation_message": "Compliance check passed"
+      }
+    ],
+    "compliance_gate_status": "PASSED",
+    "compliance_issues": [],
+    "compliance_checked_date": "2025-09-13T18:30:07.292682",
+    "compliance_checked_by": "test_admin",
+    "version": 2,
+    "notes": [
+      {
+        "timestamp": "2025-09-13T18:30:07.292684",
+        "user": "test_admin",
+        "note": "Compliance check PASSED: 0 issues found"
+      },
+      {
+        "timestamp": "2025-09-13T18:30:07.293028",
+        "user": "test_manager",
+        "note": "Label approved by test_manager: Label approved for printing"
+      }
+    ],
+    "template_id": null
+  }
+]

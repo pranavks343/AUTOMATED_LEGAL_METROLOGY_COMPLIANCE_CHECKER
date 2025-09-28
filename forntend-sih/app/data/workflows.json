@@ -1,0 +1,144 @@
+[
+  {
+    "workflow_id": "PRO-20250913182348-000",
+    "workflow_type": "PRODUCT_APPROVAL",
+    "entity_id": "TESTPR-250913-001",
+    "entity_type": "PRODUCT",
+    "status": "IN_PROGRESS",
+    "initiated_by": "test_admin",
+    "initiated_date": "2025-09-13T18:23:48.865740",
+    "completed_date": null,
+    "current_step": "PRO-20250913182348-000-STEP-02",
+    "steps": [
+      {
+        "step_id": "PRO-20250913182348-000-STEP-01",
+        "step_name": "Data Validation",
+        "required_role": "VALIDATOR",
+        "approval_level": "LEVEL_1",
+        "status": "APPROVED",
+        "assigned_to": null,
+        "started_date": "2025-09-13T18:23:48.865754",
+        "completed_date": "2025-09-13T18:23:48.866107",
+        "comments": "Data validation completed successfully",
+        "attachments": []
+      },
+      {
+        "step_id": "PRO-20250913182348-000-STEP-02",
+        "step_name": "Compliance Check",
+        "required_role": "COMPLIANCE_OFFICER",
+        "approval_level": "LEVEL_2",
+        "status": "IN_PROGRESS",
+        "assigned_to": null,
+        "started_date": "2025-09-13T18:23:48.866117",
+        "completed_date": null,
+        "comments": null,
+        "attachments": []
+      },
+      {
+        "step_id": "PRO-20250913182348-000-STEP-03",
+        "step_name": "Manager Approval",
+        "required_role": "MANAGER",
+        "approval_level": "LEVEL_3",
+        "status": "INITIATED",
+        "assigned_to": null,
+        "started_date": null,
+        "completed_date": null,
+        "comments": null,
+        "attachments": []
+      },
+      {
+        "step_id": "PRO-20250913182348-000-STEP-04",
+        "step_name": "Final Approval",
+        "required_role": "ADMIN",
+        "approval_level": "LEVEL_4",
+        "status": "INITIATED",
+        "assigned_to": null,
+        "started_date": null,
+        "completed_date": null,
+        "comments": null,
+        "attachments": []
+      }
+    ],
+    "metadata": {
+      "product_name": "Test Product - Premium Chocolate"
+    },
+    "notes": [
+      {
+        "timestamp": "2025-09-13T18:23:48.866111",
+        "user": "test_validator",
+        "note": "Step 'Data Validation' approved by test_validator"
+      }
+    ]
+  },
+  {
+    "workflow_id": "PRO-20250913183007-000",
+    "workflow_type": "PRODUCT_APPROVAL",
+    "entity_id": "TESTPR-250913-002",
+    "entity_type": "PRODUCT",
+    "status": "IN_PROGRESS",
+    "initiated_by": "test_admin",
+    "initiated_date": "2025-09-13T18:30:07.291349",
+    "completed_date": null,
+    "current_step": "PRO-20250913183007-000-STEP-02",
+    "steps": [
+      {
+        "step_id": "PRO-20250913183007-000-STEP-01",
+        "step_name": "Data Validation",
+        "required_role": "VALIDATOR",
+        "approval_level": "LEVEL_1",
+        "status": "APPROVED",
+        "assigned_to": null,
+        "started_date": "2025-09-13T18:30:07.291358",
+        "completed_date": "2025-09-13T18:30:07.291760",
+        "comments": "Data validation completed successfully",
+        "attachments": []
+      },
+      {
+        "step_id": "PRO-20250913183007-000-STEP-02",
+        "step_name": "Compliance Check",
+        "required_role": "COMPLIANCE_OFFICER",
+        "approval_level": "LEVEL_2",
+        "status": "IN_PROGRESS",
+        "assigned_to": null,
+        "started_date": "2025-09-13T18:30:07.291768",
+        "completed_date": null,
+        "comments": null,
+        "attachments": []
+      },
+      {
+        "step_id": "PRO-20250913183007-000-STEP-03",
+        "step_name": "Manager Approval",
+        "required_role": "MANAGER",
+        "approval_level": "LEVEL_3",
+        "status": "INITIATED",
+        "assigned_to": null,
+        "started_date": null,
+        "completed_date": null,
+        "comments": null,
+        "attachments": []
+      },
+      {
+        "step_id": "PRO-20250913183007-000-STEP-04",
+        "step_name": "Final Approval",
+        "required_role": "ADMIN",
+        "approval_level": "LEVEL_4",
+        "status": "INITIATED",
+        "assigned_to": null,
+        "started_date": null,
+        "completed_date": null,
+        "comments": null,
+        "attachments": []
+      }
+    ],
+    "metadata": {
+      "product_name": "Test Product - Premium Chocolate"
+    },
+    "notes": [
+      {
+        "timestamp": "2025-09-13T18:30:07.291763",
+        "user": "test_validator",
+        "note": "Step 'Data Validation' approved by test_validator"
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Legal Metrology Compliance Checker",
+    "slug": "legal-metrology-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.legalmetrology.compliance"
+    },
+    "android": {
+      "package": "com.legalmetrology.compliance"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Legal Metrology Compliance Checker to access your camera to scan barcodes for product compliance checking."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Legal Metrology Compliance Checker to access your photos to upload product images for compliance checking."
+        }
+      ],
+      "expo-barcode-scanner"
+    ]
+  }
+}

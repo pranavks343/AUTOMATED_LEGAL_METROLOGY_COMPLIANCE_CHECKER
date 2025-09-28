@@ -1,0 +1,255 @@
+{
+  "knowledge_base": {
+    "title": "E-Commerce Legal Metrology Compliance Knowledge Base",
+    "version": "1.0",
+    "last_updated": "2024-01-01",
+    "categories": {
+      "legal_framework": {
+        "acts": {
+          "legal_metrology_act_2009": {
+            "title": "Legal Metrology Act 2009",
+            "key_sections": {
+              "section_18": "Standards of weight and measure",
+              "section_25": "Packaged commodities",
+              "section_27": "Declaration on packages",
+              "section_52": "Penalties for violations"
+            },
+            "applicability": "All packaged commodities sold in India including e-commerce"
+          },
+          "consumer_protection_act_2019": {
+            "title": "Consumer Protection Act 2019",
+            "key_sections": {
+              "section_2_16": "E-commerce entity definition",
+              "section_94": "E-commerce rules and regulations"
+            },
+            "applicability": "E-commerce platforms and marketplaces"
+          }
+        },
+        "rules": {
+          "packaged_commodities_rules_2011": {
+            "title": "Legal Metrology (Packaged Commodities) Rules 2011",
+            "mandatory_declarations": [
+              "Maximum Retail Price (MRP)",
+              "Net quantity or number",
+              "Name and address of manufacturer/packer/importer",
+              "Country of origin",
+              "Generic or common name",
+              "Month and year of manufacture/packing"
+            ]
+          },
+          "ecommerce_rules_2020": {
+            "title": "Consumer Protection (E-commerce) Rules 2020",
+            "platform_obligations": [
+              "Due diligence on sellers",
+              "Grievance redressal mechanism",
+              "Appointment of grievance officer",
+              "Compliance with Legal Metrology requirements"
+            ]
+          }
+        }
+      },
+      "ecommerce_platforms": {
+        "major_platforms": {
+          "amazon_india": {
+            "compliance_requirements": [
+              "Product Safety & Compliance team verification",
+              "Mandatory MRP display",
+              "Complete seller verification",
+              "Regular compliance audits"
+            ],
+            "penalty_system": "Account suspension for non-compliance"
+          },
+          "flipkart": {
+            "compliance_requirements": [
+              "Flipkart Quality Assurance checks",
+              "Legal Metrology compliance verification",
+              "Seller education programs",
+              "Automated compliance scoring"
+            ],
+            "penalty_system": "Product delisting and seller penalties"
+          },
+          "myntra": {
+            "compliance_requirements": [
+              "Fashion-specific compliance checks",
+              "Fabric composition verification",
+              "Size and care instruction validation",
+              "Brand authorization checks"
+            ],
+            "penalty_system": "Category-specific penalties"
+          }
+        },
+        "technical_requirements": {
+          "image_specifications": {
+            "minimum_resolution": "1080x1080 pixels",
+            "recommended_resolution": "2000x2000 pixels",
+            "format": "JPEG, PNG",
+            "background": "White or transparent",
+            "text_visibility": "High contrast, readable fonts"
+          },
+          "data_extraction_accuracy": {
+            "mrp_detection": "95% minimum accuracy",
+            "net_quantity": "90% minimum accuracy",
+            "manufacturer_info": "85% minimum accuracy",
+            "country_of_origin": "80% minimum accuracy"
+          }
+        }
+      },
+      "automated_compliance": {
+        "ocr_systems": {
+          "tesseract": {
+            "accuracy": "85-95% for English text",
+            "indian_language_support": "Hindi, Tamil, Telugu, Bengali",
+            "optimization_tips": [
+              "Image preprocessing",
+              "Contrast enhancement",
+              "Noise reduction",
+              "Text area detection"
+            ]
+          },
+          "google_cloud_vision": {
+            "accuracy": "90-98% for mixed text",
+            "indian_language_support": "All major Indian languages",
+            "cost": "Pay per 1000 requests",
+            "integration": "REST API, SDKs available"
+          },
+          "aws_textract": {
+            "accuracy": "92-97% for documents",
+            "features": "Table extraction, form processing",
+            "cost": "Pay per page processed",
+            "integration": "AWS SDK, REST API"
+          }
+        },
+        "validation_algorithms": {
+          "mrp_validation": {
+            "pattern_matching": "₹\\d+(\\.\\d{2})?",
+            "range_validation": "₹1 to ₹1,00,000",
+            "format_check": "Currency symbol mandatory"
+          },
+          "quantity_validation": {
+            "unit_patterns": ["g", "kg", "ml", "l", "pieces", "nos"],
+            "numeric_validation": "Must be positive number",
+            "decimal_precision": "Up to 3 decimal places"
+          },
+          "date_validation": {
+            "format": "DD/MM/YYYY or MM/YYYY",
+            "range": "Not more than 10 years from current date",
+            "mandatory_for": ["Food products", "Pharmaceuticals", "Cosmetics"]
+          }
+        }
+      },
+      "penalties_enforcement": {
+        "violation_categories": {
+          "critical_violations": {
+            "missing_mrp": {
+              "penalty": "₹10,000 to ₹25,000",
+              "action": "Immediate product removal",
+              "legal_basis": "Rule 6, Legal Metrology Rules 2011"
+            },
+            "incorrect_quantity": {
+              "penalty": "₹10,000 to ₹25,000", 
+              "action": "Product seizure possible",
+              "legal_basis": "Rule 8, Legal Metrology Rules 2011"
+            }
+          },
+          "major_violations": {
+            "incomplete_manufacturer_info": {
+              "penalty": "₹5,000 to ₹15,000",
+              "action": "Listing suspension",
+              "legal_basis": "Rule 7, Legal Metrology Rules 2011"
+            },
+            "missing_country_of_origin": {
+              "penalty": "₹5,000 to ₹20,000",
+              "action": "Import compliance check",
+              "legal_basis": "Rule 9, Legal Metrology Rules 2011"
+            }
+          }
+        },
+        "enforcement_agencies": {
+          "central_level": {
+            "ministry": "Ministry of Consumer Affairs, Food & Public Distribution",
+            "department": "Department of Consumer Affairs",
+            "contact": "legal-metrology@nic.in"
+          },
+          "state_level": {
+            "officers": "Legal Metrology Officers",
+            "powers": [
+              "Inspection of products",
+              "Seizure of non-compliant goods",
+              "Penalty imposition",
+              "Court proceedings"
+            ]
+          }
+        }
+      },
+      "industry_specific": {
+        "food_products": {
+          "additional_requirements": [
+            "FSSAI license number",
+            "Nutritional information",
+            "Allergen declarations",
+            "Vegetarian/Non-vegetarian symbol"
+          ],
+          "regulatory_body": "Food Safety and Standards Authority of India"
+        },
+        "textiles": {
+          "additional_requirements": [
+            "Fabric composition",
+            "Care instructions",
+            "Size chart",
+            "Country of origin for imports"
+          ],
+          "regulatory_body": "Textile Committee, Ministry of Textiles"
+        },
+        "electronics": {
+          "additional_requirements": [
+            "BIS certification mark",
+            "Power consumption details",
+            "Warranty terms",
+            "E-waste compliance"
+          ],
+          "regulatory_body": "Bureau of Indian Standards"
+        },
+        "cosmetics": {
+          "additional_requirements": [
+            "Cosmetic license number",
+            "Ingredient list",
+            "Shelf life/expiry date",
+            "Skin type suitability"
+          ],
+          "regulatory_body": "Central Drugs Standard Control Organization"
+        }
+      },
+      "technical_implementation": {
+        "api_integration": {
+          "compliance_check_api": {
+            "endpoint": "/api/v1/compliance/validate",
+            "method": "POST",
+            "parameters": [
+              "product_data",
+              "image_urls",
+              "category",
+              "seller_info"
+            ],
+            "response": {
+              "compliance_score": "0-100",
+              "violations": "array of issues",
+              "recommendations": "array of suggestions"
+            }
+          }
+        },
+        "machine_learning": {
+          "training_data": {
+            "image_samples": "10,000+ product images",
+            "text_samples": "50,000+ product descriptions",
+            "violation_examples": "1,000+ non-compliant cases"
+          },
+          "model_accuracy": {
+            "text_extraction": "95%",
+            "compliance_classification": "92%",
+            "violation_detection": "88%"
+          }
+        }
+      }
+    }
+  }
+}

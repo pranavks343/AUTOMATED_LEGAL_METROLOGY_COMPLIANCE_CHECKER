@@ -1,0 +1,128 @@
+[
+  {
+    "device_id": "PRINTER001",
+    "device_name": "Label Printer - Main Production",
+    "device_type": "PRINTER",
+    "manufacturer": "Zebra Technologies",
+    "model": "ZT230",
+    "status": "DISCONNECTED",
+    "ip_address": "192.168.1.100",
+    "port": 9100,
+    "connection_string": null,
+    "capabilities": [
+      "label_printing",
+      "barcode_generation",
+      "qr_code_generation"
+    ],
+    "supported_formats": [
+      "PNG",
+      "PDF",
+      "ZPL"
+    ],
+    "max_resolution": {
+      "width": 203,
+      "height": 1016
+    },
+    "config": {
+      "dpi": 203,
+      "print_speed": "6",
+      "darkness": "10"
+    },
+    "last_heartbeat": null,
+    "error_count": 0,
+    "last_error": null,
+    "installed_date": "2025-09-13T22:36:46.439707",
+    "last_maintenance": null,
+    "maintenance_schedule": null
+  },
+  {
+    "device_id": "VISION001",
+    "device_name": "Vision Inspection System - Quality Control",
+    "device_type": "VISION_SYSTEM",
+    "manufacturer": "Cognex",
+    "model": "In-Sight 7000",
+    "status": "DISCONNECTED",
+    "ip_address": "192.168.1.101",
+    "port": 8080,
+    "connection_string": null,
+    "capabilities": [
+      "text_recognition",
+      "element_detection",
+      "compliance_validation"
+    ],
+    "supported_formats": [
+      "JPEG",
+      "PNG",
+      "TIFF"
+    ],
+    "max_resolution": {
+      "width": 1280,
+      "height": 1024
+    },
+    "config": {
+      "camera_exposure": "auto",
+      "lighting_intensity": "medium"
+    },
+    "last_heartbeat": null,
+    "error_count": 0,
+    "last_error": null,
+    "installed_date": "2025-09-13T22:36:46.439724",
+    "last_maintenance": null,
+    "maintenance_schedule": null
+  },
+  {
+    "device_id": "SCANNER001",
+    "device_name": "Barcode Scanner - Verification",
+    "device_type": "BARCODE_SCANNER",
+    "manufacturer": "Honeywell",
+    "model": "1450g",
+    "status": "DISCONNECTED",
+    "ip_address": null,
+    "port": null,
+    "connection_string": "USB",
+    "capabilities": [
+      "barcode_scanning",
+      "qr_code_scanning",
+      "data_validation"
+    ],
+    "supported_formats": [
+      "Code128",
+      "QR",
+      "DataMatrix"
+    ],
+    "max_resolution": null,
+    "config": {
+      "beep_enabled": true,
+      "led_enabled": true
+    },
+    "last_heartbeat": null,
+    "error_count": 0,
+    "last_error": null,
+    "installed_date": "2025-09-13T22:36:46.439730",
+    "last_maintenance": null,
+    "maintenance_schedule": null
+  },
+  {
+    "device_id": "PRINTER002",
+    "device_name": "laptop",
+    "device_type": "PRINTER",
+    "manufacturer": "indian ",
+    "model": "11",
+    "status": "CONNECTED",
+    "ip_address": null,
+    "port": 9100,
+    "connection_string": null,
+    "capabilities": [
+      "1"
+    ],
+    "supported_formats": [],
+    "max_resolution": null,
+    "config": {},
+    "last_heartbeat": "2025-09-14T07:51:41.776001",
+    "error_count": 0,
+    "last_error": null,
+    "installed_date": "2025-09-14T07:51:33.276995",
+    "last_maintenance": null,
+    "maintenance_schedule": null
+  }
+]

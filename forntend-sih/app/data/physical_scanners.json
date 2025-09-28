@@ -1,0 +1,70 @@
+{
+  "scanners": [
+    {
+      "scanner_id": "USB_SCANNER_001",
+      "name": "Generic USB Serial Scanner",
+      "manufacturer": "Generic",
+      "model": "USB-001",
+      "connection_type": "USB_SERIAL",
+      "port": null,
+      "baud_rate": 9600,
+      "data_bits": 8,
+      "stop_bits": 1,
+      "parity": "N",
+      "timeout": 1.0,
+      "vendor_id": null,
+      "product_id": null,
+      "endpoint": null,
+      "ip_address": null,
+      "tcp_port": null,
+      "scan_trigger": "auto",
+      "beep_enabled": true,
+      "led_enabled": true,
+      "prefix": "",
+      "suffix": "\r\n",
+      "supported_formats": [
+        "Code128",
+        "Code39",
+        "EAN-13",
+        "EAN-8",
+        "UPC-A",
+        "UPC-E",
+        "QR",
+        "DataMatrix"
+      ]
+    },
+    {
+      "scanner_id": "HID_SCANNER_001",
+      "name": "Generic USB HID Scanner",
+      "manufacturer": "Generic",
+      "model": "HID-001",
+      "connection_type": "USB_HID",
+      "port": null,
+      "baud_rate": 9600,
+      "data_bits": 8,
+      "stop_bits": 1,
+      "parity": "N",
+      "timeout": 1.0,
+      "vendor_id": null,
+      "product_id": null,
+      "endpoint": null,
+      "ip_address": null,
+      "tcp_port": null,
+      "scan_trigger": "auto",
+      "beep_enabled": true,
+      "led_enabled": true,
+      "prefix": "",
+      "suffix": "\r\n",
+      "supported_formats": [
+        "Code128",
+        "Code39",
+        "EAN-13",
+        "EAN-8",
+        "UPC-A",
+        "UPC-E",
+        "QR",
+        "DataMatrix"
+      ]
+    }
+  ]
+}

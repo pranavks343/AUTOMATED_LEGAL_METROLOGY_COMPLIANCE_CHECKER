@@ -1,0 +1,43 @@
+streamlit==1.38.0
+pandas==2.2.2
+pydantic==2.8.2
+pytesseract==0.3.13
+Pillow==10.4.0
+opencv-python-headless==4.10.0.84
+PyYAML==6.0.2
+regex==2024.7.24
+openpyxl==3.1.2
+psutil==5.9.8
+
+# RAG Chatbot Dependencies
+openai>=1.0.0
+faiss-cpu>=1.7.0
+numpy>=1.24.0
+python-dotenv>=1.0.0
+
+# Barcode Scanner Dependencies
+opencv-python>=4.8.0
+pyzbar>=0.1.9
+requests>=2.31.0
+
+# Physical Barcode Scanner Dependencies
+pyserial>=3.5
+pyusb>=1.2.1
+
+# Web Crawling Dependencies
+selenium>=4.15.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+webdriver-manager>=4.0.0
+
+# Enhanced Computer Vision Dependencies
+easyocr>=1.7.0
+scikit-image>=0.21.0
+scikit-learn>=1.3.0
+matplotlib>=3.7.0
+scipy>=1.11.0
+
+# Visualization Dependencies
+plotly>=5.15.0
+folium>=0.14.0
+streamlit-folium>=0.13.0

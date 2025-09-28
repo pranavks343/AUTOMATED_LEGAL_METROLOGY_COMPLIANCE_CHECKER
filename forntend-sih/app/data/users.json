@@ -1,0 +1,96 @@
+{
+  "admin": {
+    "username": "admin",
+    "email": "admin@metrology.com",
+    "password_hash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+    "role": "admin",
+    "created_at": "2024-01-01",
+    "is_active": true
+  },
+  "user": {
+    "username": "user",
+    "email": "user@metrology.com",
+    "password_hash": "e606e38b0d8c19b24cf0ee3808183162ea7cd63ff7912dbb22b5e803286b4446",
+    "role": "user",
+    "created_at": "2024-01-01",
+    "is_active": true
+  },
+  "kp": {
+    "username": "kp",
+    "email": "kp@example.com",
+    "password_hash": "5147a6de6c26ca2472e0b20e803a1ba7fe6643775294aa714b6263bf176c37d1",
+    "role": "user",
+    "created_at": "2025-09-13T14:41:55.556131",
+    "is_active": true,
+    "last_login": "2025-09-13T15:06:01.564637"
+  },
+  "admin ": {
+    "username": "admin ",
+    "email": "pranavks343@gmail.com",
+    "password_hash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+    "role": "admin",
+    "created_at": "2025-09-13T14:49:27.293941",
+    "is_active": true
+  },
+  "ksp": {
+    "username": "ksp",
+    "email": "2300030848@gmail.com",
+    "password_hash": "39db6b43b4ead9a87dd9cc5214d0bb1fa4db1a02170fe182de73a23fd3dc2287",
+    "role": "user",
+    "created_at": "2025-09-13T15:07:18.817285",
+    "is_active": true
+  },
+  "KSP": {
+    "username": "KSP",
+    "email": "1234@gmail.com",
+    "password_hash": "6e48075fcc14671fde1df7965a6b43d6f7dda8f38041d79d0e723a63055393b4",
+    "role": "user",
+    "created_at": "2025-09-13T15:08:01.166761",
+    "is_active": true,
+    "last_login": "2025-09-13T15:19:48.188829"
+  },
+  "AD": {
+    "username": "AD",
+    "email": "AD@gmail.com",
+    "password_hash": "c7bf4bbdbcd88d9d7f7c7b299c94e9e52091af2fd2888ecf85a9d6a4160b4184",
+    "role": "admin",
+    "created_at": "2025-09-13T15:30:05.235460",
+    "is_active": true,
+    "last_login": "2025-09-28T11:48:38.068412"
+  },
+  "Pranavks": {
+    "username": "Pranavks",
+    "email": "pranavks343@gmail.com",
+    "password_hash": "5147a6de6c26ca2472e0b20e803a1ba7fe6643775294aa714b6263bf176c37d1",
+    "role": "user",
+    "created_at": "2025-09-28T11:49:50.901084",
+    "is_active": true,
+    "last_login": "2025-09-28T11:57:11.145159"
+  },
+  "Pranav": {
+    "username": "Pranav",
+    "email": "pranavks343@gmail.com",
+    "password_hash": "5147a6de6c26ca2472e0b20e803a1ba7fe6643775294aa714b6263bf176c37d1",
+    "role": "user",
+    "created_at": "2025-09-28T11:58:20.143454",
+    "is_active": true,
+    "last_login": "2025-09-28T11:58:22.291992"
+  },
+  "PRANAV": {
+    "username": "PRANAV",
+    "email": "PRANAVKS343@GMAIL.COM",
+    "password_hash": "f647ceea9954f0f48f97ed165b681d8457a3930be039b902bfeb83777a2471e8",
+    "role": "user",
+    "created_at": "2025-09-28T11:59:08.611091",
+    "is_active": true
+  },
+  "KONDAPI SRI PRANAV": {
+    "username": "KONDAPI SRI PRANAV",
+    "email": "PRANAVKS343@GMAIL.COM",
+    "password_hash": "6e48075fcc14671fde1df7965a6b43d6f7dda8f38041d79d0e723a63055393b4",
+    "role": "admin",
+    "created_at": "2025-09-28T11:59:56.763012",
+    "is_active": true,
+    "last_login": "2025-09-28T11:59:59.127482"
+  }
+}

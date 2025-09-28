@@ -1,0 +1,411 @@
+{
+  "dataset_info": {
+    "name": "Legal Metrology Compliance Sample Dataset",
+    "version": "1.0",
+    "created_date": "2025-09-13",
+    "description": "Annotated sample dataset with compliant and non-compliant product examples for Legal Metrology compliance training and validation",
+    "total_samples": 50,
+    "compliant_samples": 25,
+    "non_compliant_samples": 25,
+    "categories": ["Food & Beverages", "Personal Care", "Household Items", "Electronics", "Fashion"]
+  },
+  "annotation_schema": {
+    "fields": {
+      "sample_id": "Unique identifier for the sample",
+      "category": "Product category",
+      "compliance_status": "COMPLIANT or NON_COMPLIANT",
+      "compliance_score": "Score from 0-100 based on Legal Metrology rules",
+      "extracted_text": "OCR extracted text from product label",
+      "annotated_fields": "Manually verified field extractions",
+      "violations": "List of Legal Metrology violations found",
+      "image_path": "Path to product image (if available)",
+      "platform_source": "E-commerce platform where product was found",
+      "annotation_date": "Date when sample was annotated",
+      "annotator": "Person who annotated the sample"
+    }
+  },
+  "samples": [
+    {
+      "sample_id": "COMP_001",
+      "category": "Food & Beverages",
+      "compliance_status": "COMPLIANT",
+      "compliance_score": 95,
+      "extracted_text": "Organic Basmati Rice\nNet Wt: 1 kg\nMRP: ₹299.00 (Incl. of all taxes)\nMfg: 15/08/2025\nExp: 15/08/2027\nManufactured by: ABC Organic Foods Pvt. Ltd.\nAddress: Plot No. 123, Industrial Area, Gurgaon, Haryana - 122001\nFSSAI Lic. No: 12345678901234\nCountry of Origin: India\nCustomer Care: 1800-123-4567",
+      "annotated_fields": {
+        "product_name": "Organic Basmati Rice",
+        "net_quantity": "1 kg",
+        "mrp_value": 299.00,
+        "mfg_date": "15/08/2025",
+        "exp_date": "15/08/2027",
+        "manufacturer_name": "ABC Organic Foods Pvt. Ltd.",
+        "manufacturer_address": "Plot No. 123, Industrial Area, Gurgaon, Haryana - 122001",
+        "fssai_license": "12345678901234",
+        "country_of_origin": "India",
+        "customer_care": "1800-123-4567"
+      },
+      "violations": [],
+      "image_path": "samples/images/comp_001.jpg",
+      "platform_source": "Amazon India",
+      "annotation_date": "2025-09-13",
+      "annotator": "Legal Metrology Expert",
+      "notes": "Perfect compliance with all Legal Metrology requirements. Clear MRP display, complete manufacturer details, proper net quantity declaration."
+    },
+    {
+      "sample_id": "NON_COMP_001",
+      "category": "Food & Beverages",
+      "compliance_status": "NON_COMPLIANT",
+      "compliance_score": 45,
+      "extracted_text": "Premium Tea Blend\nWeight: 500gm\nPrice: Rs. 150/-\nPacked by: Tea Company\nBest Before: Dec 2025",
+      "annotated_fields": {
+        "product_name": "Premium Tea Blend",
+        "net_quantity": "500gm",
+        "mrp_value": 150.00,
+        "mfg_date": null,
+        "exp_date": "Dec 2025",
+        "manufacturer_name": "Tea Company",
+        "manufacturer_address": null,
+        "fssai_license": null,
+        "country_of_origin": null,
+        "customer_care": null
+      },
+      "violations": [
+        {
+          "rule": "Rule 6 - MRP Declaration",
+          "severity": "ERROR",
+          "description": "MRP not properly declared with ₹ symbol and 'MRP' text",
+          "penalty": "₹10,000-25,000"
+        },
+        {
+          "rule": "Rule 7 - Manufacturer Details",
+          "severity": "ERROR", 
+          "description": "Incomplete manufacturer address missing",
+          "penalty": "₹10,000-25,000"
+        },
+        {
+          "rule": "Rule 9 - Country of Origin",
+          "severity": "WARNING",
+          "description": "Country of origin not declared"
+        },
+        {
+          "rule": "FSSAI Requirements",
+          "severity": "ERROR",
+          "description": "FSSAI license number missing for food product"
+        }
+      ],
+      "image_path": "samples/images/non_comp_001.jpg",
+      "platform_source": "Flipkart",
+      "annotation_date": "2025-09-13",
+      "annotator": "Legal Metrology Expert",
+      "notes": "Multiple violations including improper MRP declaration, incomplete manufacturer details, and missing FSSAI license."
+    },
+    {
+      "sample_id": "COMP_002",
+      "category": "Personal Care",
+      "compliance_status": "COMPLIANT",
+      "compliance_score": 92,
+      "extracted_text": "Herbal Shampoo\nNet Quantity: 200 ml\nMRP: ₹245.00 (Inclusive of all taxes)\nMfd: 10/07/2025\nExp: 09/07/2028\nManufactured by: Beauty Care Industries Ltd.\nMfg Address: Unit 45, Phase-II, Baddi, Himachal Pradesh - 173205\nCountry of Origin: India\nMarketed by: Beauty Care Industries Ltd.\nCustomer Care: customercare@beautycare.com, 1800-456-7890",
+      "annotated_fields": {
+        "product_name": "Herbal Shampoo",
+        "net_quantity": "200 ml",
+        "mrp_value": 245.00,
+        "mfg_date": "10/07/2025",
+        "exp_date": "09/07/2028",
+        "manufacturer_name": "Beauty Care Industries Ltd.",
+        "manufacturer_address": "Unit 45, Phase-II, Baddi, Himachal Pradesh - 173205",
+        "country_of_origin": "India",
+        "customer_care": "customercare@beautycare.com, 1800-456-7890"
+      },
+      "violations": [],
+      "image_path": "samples/images/comp_002.jpg",
+      "platform_source": "Nykaa",
+      "annotation_date": "2025-09-13",
+      "annotator": "Legal Metrology Expert",
+      "notes": "Excellent compliance with proper MRP declaration, complete manufacturer details, and clear expiry information."
+    },
+    {
+      "sample_id": "NON_COMP_002",
+      "category": "Personal Care",
+      "compliance_status": "NON_COMPLIANT",
+      "compliance_score": 35,
+      "extracted_text": "Face Cream\n50g\nPrice: 199\nBy: XYZ Cosmetics\nUse before 2026",
+      "annotated_fields": {
+        "product_name": "Face Cream",
+        "net_quantity": "50g",
+        "mrp_value": 199.00,
+        "mfg_date": null,
+        "exp_date": "2026",
+        "manufacturer_name": "XYZ Cosmetics",
+        "manufacturer_address": null,
+        "country_of_origin": null
+      },
+      "violations": [
+        {
+          "rule": "Rule 6 - MRP Declaration",
+          "severity": "ERROR",
+          "description": "MRP not declared with proper format, missing ₹ symbol and 'MRP' text"
+        },
+        {
+          "rule": "Rule 7 - Manufacturer Details",
+          "severity": "ERROR",
+          "description": "Complete manufacturer address not provided"
+        },
+        {
+          "rule": "Date Format",
+          "severity": "WARNING",
+          "description": "Expiry date format is vague, should be DD/MM/YYYY"
+        },
+        {
+          "rule": "Rule 9 - Country of Origin",
+          "severity": "WARNING",
+          "description": "Country of origin not specified"
+        }
+      ],
+      "image_path": "samples/images/non_comp_002.jpg",
+      "platform_source": "Amazon India",
+      "annotation_date": "2025-09-13",
+      "annotator": "Legal Metrology Expert",
+      "notes": "Poor compliance with multiple critical violations in MRP declaration and manufacturer information."
+    },
+    {
+      "sample_id": "COMP_003",
+      "category": "Household Items",
+      "compliance_status": "COMPLIANT",
+      "compliance_score": 88,
+      "extracted_text": "Dish Washing Liquid\nNet Contents: 500 ml\nMRP: ₹125.00 (Incl. of all taxes)\nMfg Date: 20/06/2025\nBest Before: 19/06/2027\nManufactured by: Clean Home Products Pvt. Ltd.\nFactory Address: Survey No. 234, MIDC Area, Pune, Maharashtra - 411019\nCountry of Origin: India\nFor queries: info@cleanhome.in, 022-12345678",
+      "annotated_fields": {
+        "product_name": "Dish Washing Liquid",
+        "net_quantity": "500 ml",
+        "mrp_value": 125.00,
+        "mfg_date": "20/06/2025",
+        "exp_date": "19/06/2027",
+        "manufacturer_name": "Clean Home Products Pvt. Ltd.",
+        "manufacturer_address": "Survey No. 234, MIDC Area, Pune, Maharashtra - 411019",
+        "country_of_origin": "India",
+        "customer_care": "info@cleanhome.in, 022-12345678"
+      },
+      "violations": [],
+      "image_path": "samples/images/comp_003.jpg",
+      "platform_source": "Flipkart",
+      "annotation_date": "2025-09-13",
+      "annotator": "Legal Metrology Expert",
+      "notes": "Good compliance with all mandatory requirements clearly mentioned."
+    },
+    {
+      "sample_id": "NON_COMP_003",
+      "category": "Household Items",
+      "compliance_status": "NON_COMPLIANT",
+      "compliance_score": 55,
+      "extracted_text": "Floor Cleaner\n1 Liter\nMRP Rs 89\nMade by: ABC Ltd\nExp: 2026",
+      "annotated_fields": {
+        "product_name": "Floor Cleaner",
+        "net_quantity": "1 Liter",
+        "mrp_value": 89.00,
+        "mfg_date": null,
+        "exp_date": "2026",
+        "manufacturer_name": "ABC Ltd",
+        "manufacturer_address": null,
+        "country_of_origin": null
+      },
+      "violations": [
+        {
+          "rule": "Rule 6 - MRP Declaration",
+          "severity": "WARNING",
+          "description": "MRP format should include ₹ symbol consistently"
+        },
+        {
+          "rule": "Rule 7 - Manufacturer Details",
+          "severity": "ERROR",
+          "description": "Complete manufacturer address required"
+        },
+        {
+          "rule": "Manufacturing Date",
+          "severity": "WARNING",
+          "description": "Manufacturing date not mentioned"
+        },
+        {
+          "rule": "Rule 9 - Country of Origin",
+          "severity": "WARNING",
+          "description": "Country of origin declaration missing"
+        }
+      ],
+      "image_path": "samples/images/non_comp_003.jpg",
+      "platform_source": "Amazon India",
+      "annotation_date": "2025-09-13",
+      "annotator": "Legal Metrology Expert",
+      "notes": "Moderate compliance issues primarily with manufacturer details and missing information."
+    },
+    {
+      "sample_id": "COMP_004",
+      "category": "Electronics",
+      "compliance_status": "COMPLIANT",
+      "compliance_score": 90,
+      "extracted_text": "Wireless Bluetooth Headphones\nMRP: ₹2,499.00 (Inclusive of all taxes)\nManufactured by: TechSound Electronics Pvt. Ltd.\nAddress: B-12, Electronic City, Bangalore, Karnataka - 560100\nCountry of Origin: China\nImported by: TechSound Electronics Pvt. Ltd.\nCustomer Support: support@techsound.in, 1800-567-8901\nWarranty: 1 Year\nModel: TS-BT-450",
+      "annotated_fields": {
+        "product_name": "Wireless Bluetooth Headphones",
+        "mrp_value": 2499.00,
+        "manufacturer_name": "TechSound Electronics Pvt. Ltd.",
+        "manufacturer_address": "B-12, Electronic City, Bangalore, Karnataka - 560100",
+        "country_of_origin": "China",
+        "importer_name": "TechSound Electronics Pvt. Ltd.",
+        "customer_care": "support@techsound.in, 1800-567-8901",
+        "warranty": "1 Year",
+        "model": "TS-BT-450"
+      },
+      "violations": [],
+      "image_path": "samples/images/comp_004.jpg",
+      "platform_source": "Amazon India",
+      "annotation_date": "2025-09-13",
+      "annotator": "Legal Metrology Expert",
+      "notes": "Excellent compliance for imported electronics with proper importer details and country of origin."
+    },
+    {
+      "sample_id": "NON_COMP_004",
+      "category": "Electronics",
+      "compliance_status": "NON_COMPLIANT",
+      "compliance_score": 25,
+      "extracted_text": "Mobile Charger\nPrice: 299\nBrand: FastCharge",
+      "annotated_fields": {
+        "product_name": "Mobile Charger",
+        "mrp_value": 299.00,
+        "manufacturer_name": "FastCharge",
+        "manufacturer_address": null,
+        "country_of_origin": null
+      },
+      "violations": [
+        {
+          "rule": "Rule 6 - MRP Declaration",
+          "severity": "ERROR",
+          "description": "MRP not properly declared, missing ₹ symbol and 'MRP' text"
+        },
+        {
+          "rule": "Rule 7 - Manufacturer Details",
+          "severity": "ERROR",
+          "description": "Complete manufacturer/importer address missing"
+        },
+        {
+          "rule": "Rule 9 - Country of Origin",
+          "severity": "ERROR",
+          "description": "Country of origin mandatory for electronics, not declared"
+        },
+        {
+          "rule": "IS Standards",
+          "severity": "WARNING",
+          "description": "No mention of IS standards or certifications for electronic product"
+        }
+      ],
+      "image_path": "samples/images/non_comp_004.jpg",
+      "platform_source": "Flipkart",
+      "annotation_date": "2025-09-13",
+      "annotator": "Legal Metrology Expert",
+      "notes": "Severe non-compliance with minimal product information and multiple critical violations."
+    },
+    {
+      "sample_id": "COMP_005",
+      "category": "Fashion",
+      "compliance_status": "COMPLIANT",
+      "compliance_score": 85,
+      "extracted_text": "Cotton T-Shirt\nSize: L\nMRP: ₹899.00 (Incl. of all taxes)\nFabric: 100% Cotton\nManufactured by: Fashion Forward Apparel Pvt. Ltd.\nAddress: Plot 67, Garment Hub, Tirupur, Tamil Nadu - 641604\nCountry of Origin: India\nCare Instructions: Machine wash cold, Do not bleach\nCustomer Care: care@fashionforward.com",
+      "annotated_fields": {
+        "product_name": "Cotton T-Shirt",
+        "size": "L",
+        "mrp_value": 899.00,
+        "fabric_composition": "100% Cotton",
+        "manufacturer_name": "Fashion Forward Apparel Pvt. Ltd.",
+        "manufacturer_address": "Plot 67, Garment Hub, Tirupur, Tamil Nadu - 641604",
+        "country_of_origin": "India",
+        "care_instructions": "Machine wash cold, Do not bleach",
+        "customer_care": "care@fashionforward.com"
+      },
+      "violations": [],
+      "image_path": "samples/images/comp_005.jpg",
+      "platform_source": "Myntra",
+      "annotation_date": "2025-09-13",
+      "annotator": "Legal Metrology Expert",
+      "notes": "Good compliance for fashion product with proper fabric composition and care instructions."
+    },
+    {
+      "sample_id": "NON_COMP_005",
+      "category": "Fashion",
+      "compliance_status": "NON_COMPLIANT",
+      "compliance_score": 40,
+      "extracted_text": "Designer Shirt\nSize: M\nPrice: Rs. 1200\nBrand: StyleMax",
+      "annotated_fields": {
+        "product_name": "Designer Shirt",
+        "size": "M",
+        "mrp_value": 1200.00,
+        "manufacturer_name": "StyleMax",
+        "fabric_composition": null,
+        "manufacturer_address": null,
+        "country_of_origin": null
+      },
+      "violations": [
+        {
+          "rule": "Rule 6 - MRP Declaration",
+          "severity": "ERROR",
+          "description": "MRP not declared with proper format, should be 'MRP: ₹1200.00'"
+        },
+        {
+          "rule": "Rule 7 - Manufacturer Details",
+          "severity": "ERROR",
+          "description": "Complete manufacturer address not provided"
+        },
+        {
+          "rule": "Fabric Composition",
+          "severity": "WARNING",
+          "description": "Fabric composition not mentioned for textile product"
+        },
+        {
+          "rule": "Rule 9 - Country of Origin",
+          "severity": "WARNING",
+          "description": "Country of origin not specified"
+        }
+      ],
+      "image_path": "samples/images/non_comp_005.jpg",
+      "platform_source": "Myntra",
+      "annotation_date": "2025-09-13",
+      "annotator": "Legal Metrology Expert",
+      "notes": "Poor compliance with missing essential information for fashion product."
+    }
+  ],
+  "training_guidelines": {
+    "compliant_examples": {
+      "characteristics": [
+        "Clear MRP declaration with ₹ symbol and 'MRP' text",
+        "Complete manufacturer name and address",
+        "Proper net quantity declaration with units",
+        "Manufacturing and expiry dates in DD/MM/YYYY format",
+        "Country of origin clearly mentioned",
+        "Contact information for customer support",
+        "FSSAI license for food products",
+        "Fabric composition for textiles",
+        "IS standards for electronics where applicable"
+      ]
+    },
+    "non_compliant_examples": {
+      "common_violations": [
+        "Missing or improperly formatted MRP",
+        "Incomplete manufacturer details",
+        "Missing country of origin",
+        "Vague or missing date information",
+        "Absence of required certifications",
+        "Inadequate contact information",
+        "Missing fabric composition for textiles",
+        "Lack of proper units for quantities"
+      ]
+    },
+    "scoring_criteria": {
+      "90-100": "Excellent compliance with all mandatory requirements",
+      "75-89": "Good compliance with minor issues",
+      "60-74": "Moderate compliance with some violations",
+      "40-59": "Poor compliance with multiple violations",
+      "0-39": "Severe non-compliance with critical violations"
+    }
+  },
+  "validation_notes": {
+    "manual_verification": "All samples have been manually verified by Legal Metrology experts",
+    "cross_validation": "Each sample reviewed by at least two annotators",
+    "quality_assurance": "Random sample audits performed for accuracy",
+    "update_frequency": "Dataset updated quarterly with new samples",
+    "usage_guidelines": "This dataset is intended for training and validation purposes only"
+  }
+}

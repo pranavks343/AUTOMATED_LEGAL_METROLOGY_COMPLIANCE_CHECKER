@@ -1,0 +1,63 @@
+[
+  {
+    "check_id": "CHECK-20250914075156-000",
+    "product_sku": "TESTPR-250913-002",
+    "image_path": "",
+    "status": "FAILED",
+    "performed_by": "AD",
+    "performed_date": "2025-09-14T07:51:56.477399",
+    "compliance_score": 77.05665617325589,
+    "detected_issues": [
+      "Low compliance score detected",
+      "Some text elements not clearly visible",
+      "Label positioning may need adjustment"
+    ],
+    "confidence_level": 80.30050112097658,
+    "text_recognition_results": {
+      "mrp_detected": true,
+      "quantity_detected": true,
+      "manufacturer_detected": true,
+      "confidence": 76.30618122181454
+    },
+    "element_detection_results": {
+      "barcode_detected": true,
+      "qr_code_detected": true,
+      "text_elements": 3,
+      "layout_score": 71.93459521518743
+    },
+    "compliance_analysis": {
+      "mrp_compliance": false,
+      "quantity_compliance": true,
+      "labeling_compliance": false,
+      "overall_compliance": false
+    },
+    "image_quality_score": 89.34705918508827,
+    "lighting_score": 84.70284423960351,
+    "sharpness_score": 87.74270237930753,
+    "notes": [
+      {
+        "timestamp": "2025-09-14T07:54:15.423845",
+        "user": "system",
+        "note": "Vision check completed. Compliance score: 77.1%"
+      }
+    ]
+  },
+  {
+    "check_id": "CHECK-20250914075405-000",
+    "product_sku": "TESTPR-250913-002",
+    "image_path": "",
+    "status": "PENDING",
+    "performed_by": "AD",
+    "performed_date": "2025-09-14T07:54:05.894812",
+    "compliance_score": 0.0,
+    "detected_issues": [],
+    "confidence_level": 0.0,
+    "text_recognition_results": {},
+    "element_detection_results": {},
+    "compliance_analysis": {},
+    "image_quality_score": 0.0,
+    "lighting_score": 0.0,
+    "sharpness_score": 0.0,
+    "notes": []
+  }
+]
