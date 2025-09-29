@@ -1,0 +1,3138 @@
+[
+  {
+    "title": "5,365",
+    "brand": null,
+    "price": 489.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo3MDg1MTYyMTI3NjMxNzIzOjE3NTkxNzA2MzI6c3BfYXRmOjMwMDY2MDUwMzA4MjIzMjo6MDo6&url=%2FLakme-Primer-Powder-Foundation-Compact%2Fdp%2FB0744RQRG8%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A%26dib_tag%3Dse%26keywords%3Dcosmetics%26qid%3D1759170632%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=zMZpxhRHbY&sp_cr=ZAZ",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/51tVPK5ZsxL._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.0,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 489.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "Lakme Facelift Foundation Stick-NeutralMedium",
+    "brand": null,
+    "price": 880.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo3MDg1MTYyMTI3NjMxNzIzOjE3NTkxNzA2MzI6c3BfYXRmOjMwMDY2MDM2ODI0NzUzMjo6MDo6&url=%2FLAKM%25C3%2589-Facelift-Coverage-Foundation-Stick-Neutralmedium%2Fdp%2FB0CTQKN2JP%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A%26dib_tag%3Dse%26keywords%3Dcosmetics%26qid%3D1759170632%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=hlL5kU4DtG&sp_cr=ZAZ",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/41AYARK7HgL._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.2,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 880.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "SUGAR POP HD Liquid Foundation Tube with SPF 30 | Lasts upto 16hrs | Full Coverage | Water-Resistant | Matte Finish | 18ml - 01 Hazelnut",
+    "brand": null,
+    "price": 199.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo3MDg1MTYyMTI3NjMxNzIzOjE3NTkxNzA2MzI6c3BfYXRmOjMwMDc0NTA2NDIxMzMzMjo6MDo6&url=%2FSUGAR-POP-Foundation-Coverage-Water-Resistant%2Fdp%2FB0FHWV1CQC%2Fref%3Dsr_1_3_sspa%3Fdib%3DeyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A%26dib_tag%3Dse%26keywords%3Dcosmetics%26qid%3D1759170632%26sr%3D8-3-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=YH3L3oztSH&sp_cr=ZAZ",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/61UK5efNalL._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.7,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 199.0,
+        "net_quantity_value": 18.0,
+        "unit": "ml",
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "Cream",
+    "brand": null,
+    "price": 86.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo3MDg1MTYyMTI3NjMxNzIzOjE3NTkxNzA2MzI6c3BfYXRmOjMwMDY2MDIwMDkxMTAzMjo6MDo6&url=%2FLAKM%25C3%2589-Ultimate-Cream-Liner-Matte%2Fdp%2FB07PFKT96B%2Fref%3Dsr_1_4_sspa%3Fdib%3DeyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A%26dib_tag%3Dse%26keywords%3Dcosmetics%26qid%3D1759170632%26sr%3D8-4-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=UowqOwH2dy&sp_cr=ZAZ",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/512CkaLx45L._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.1,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 86.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "Pencil",
+    "brand": null,
+    "price": 103.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/Maybelline-Colossal-Kajal-Black-0-35g/dp/B06WGZP21B/ref=sr_1_5?dib=eyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A&dib_tag=se&keywords=cosmetics&qid=1759170632&sr=8-5",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/61b2tDBxhlL._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.2,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 103.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "Cream",
+    "brand": null,
+    "price": 85.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/Cosmetics-Enriched-Multipurpose-Lightweight-B07-05/dp/B0CG6JKPDQ/ref=sr_1_6?dib=eyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A&dib_tag=se&keywords=cosmetics&qid=1759170632&sr=8-6",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/61mBXK2LsmL._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.1,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 85.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "45,003",
+    "brand": null,
+    "price": 120.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/Maybelline-York-12Hr-Control-Compact/dp/B08QSWPZS5/ref=sr_1_7?dib=eyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A&dib_tag=se&keywords=cosmetics&qid=1759170632&sr=8-7",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/61FDV10Re5L._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.2,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 120.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "40,301",
+    "brand": null,
+    "price": 171.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/Maybelline-Matte-Poreless-Liquid-Foundation/dp/B07PMCNNPY/ref=sr_1_8?dib=eyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A&dib_tag=se&keywords=cosmetics&qid=1759170632&sr=8-8",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/41gfpqs4D6L._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.1,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 171.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "16,940",
+    "brand": null,
+    "price": 99.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/Lakme-CC-Cream-Mini-Moisturizer/dp/B01BBNF6C6/ref=sr_1_9?dib=eyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A&dib_tag=se&keywords=cosmetics&qid=1759170632&sr=8-9",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/51IgR2yRK2L._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.1,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 99.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "Stick",
+    "brand": null,
+    "price": 127.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/SUGAR-Cosmetics-Tipsy-Lips-Moisturizing/dp/B08J3PB1Q1/ref=sr_1_10?dib=eyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A&dib_tag=se&keywords=cosmetics&qid=1759170632&sr=8-10",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/61pv8VCXycL._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.2,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 127.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "2,429",
+    "brand": null,
+    "price": 188.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/Xelvix-Toiletries-Organizer-Cosmetic-Portable/dp/B0B9GMP3VQ/ref=sr_1_11?dib=eyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A&dib_tag=se&keywords=cosmetics&qid=1759170632&sr=8-11",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/61hDIw9CGkL._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.3,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 188.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "52,299",
+    "brand": null,
+    "price": 208.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/Maybelline-Hypercurl-Mascara-Waterproof-Black/dp/B0079Z0AMM/ref=sr_1_12?dib=eyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A&dib_tag=se&keywords=cosmetics&qid=1759170632&sr=8-12",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/51Y2UGLW+bL._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.2,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 208.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "4,673",
+    "brand": null,
+    "price": 428.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/Blue-Heaven-Festive-Combo-Multicolor/dp/B09HSQ15DZ/ref=sr_1_13?dib=eyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A&dib_tag=se&keywords=cosmetics&qid=1759170632&sr=8-13",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/71TtkiOaU7L._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.1,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 428.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "Liner",
+    "brand": null,
+    "price": 49.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/MARS-Smooth-Application-Lasting-01-LUSTY/dp/B0C9MS7LYF/ref=sr_1_14?dib=eyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A&dib_tag=se&keywords=cosmetics&qid=1759170632&sr=8-14",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/61DrkqLmUyL._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.3,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 49.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "10,224",
+    "brand": null,
+    "price": 195.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/ALOXE-Cosmetic-Organizer-Stationary-Organiser/dp/B0BLK9X25W/ref=sr_1_15?dib=eyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A&dib_tag=se&keywords=cosmetics&qid=1759170632&sr=8-15",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/71a0mwTxooL._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.1,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 195.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "Pencil",
+    "brand": null,
+    "price": 57.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/Beauty-Long-lasting-Finish-Non-drying-Shade-06/dp/B07Y3DPD17/ref=sr_1_16?dib=eyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A&dib_tag=se&keywords=cosmetics&qid=1759170632&sr=8-16",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/51asZBikaOL._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.2,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 57.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "30,653",
+    "brand": null,
+    "price": 133.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/Garnier-Naturals-Micellar-Cleansing-Water/dp/B06ZZ5XVR7/ref=sr_1_17?dib=eyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A&dib_tag=se&keywords=cosmetics&qid=1759170632&sr=8-17",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/41yAKxKqv4L._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.4,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 133.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "1,041",
+    "brand": null,
+    "price": 229.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/JRM-Capacity-Cosmetic-Waterproof-Organizer/dp/B0D9P5S955/ref=sr_1_18?dib=eyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A&dib_tag=se&keywords=cosmetics&qid=1759170632&sr=8-18",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/61qRyUuMqKL._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 3.8,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 229.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "6,945",
+    "brand": null,
+    "price": 64.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/Ponds-Natural-Glow-Face-Powder/dp/B0B521CKF8/ref=sr_1_19?dib=eyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A&dib_tag=se&keywords=cosmetics&qid=1759170632&sr=8-19",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/51pNLVL+DKL._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.1,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 64.0,
+        "net_quantity_value": null,
+        "unit": null,
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "net_quantity",
+          "level": "ERROR",
+          "message": "Missing required field: net_quantity"
+        },
+        {
+          "field": "unit",
+          "level": "ERROR",
+          "message": "Missing required field: unit"
+        },
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  },
+  {
+    "title": "INSIGHT Gel Cosmetics No Smudge Eyeliner| Intense Matte Finish | Quick Drying |Smooth Application | Waterproof | Smudgeproof,(EL-53), Black 4 ML (Pack of 1)",
+    "brand": null,
+    "price": 71.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/INSIGHT-Cosmetics-Application-Waterproof-Smudgeproof/dp/B0D5BD6QSZ/ref=sr_1_20?dib=eyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fIoERII8PICsuRUkf7jM8UgWaZQyBGtJk50QDghirgLF1ZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HONNP5655ET-s8V6---Argk.tKVWsqBpT_11ukJmC08BaVQ94MPB4Jwh7gmAkBJQs-A&dib_tag=se&keywords=cosmetics&qid=1759170632&sr=8-20",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/51kgpQjt2HL._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.1,
+    "reviews_count": null,
+    "extracted_at": "2025-09-30 00:00:34",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": {
+      "is_compliant": false,
+      "score": 0.0,
+      "issues": [
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ]
+    },
+    "compliance_details": {
+      "extracted_fields": {
+        "mrp_value": 71.0,
+        "net_quantity_value": 4.0,
+        "unit": "ml",
+        "manufacturer_name": null,
+        "manufacturer_address": null,
+        "consumer_care": null,
+        "country_of_origin": null,
+        "mfg_date": null,
+        "expiry_date": null
+      },
+      "validation_issues": [
+        {
+          "field": "manufacturer_name",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_name"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Missing required field: manufacturer_address"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Missing required field: consumer_care"
+        },
+        {
+          "field": "country_of_origin",
+          "level": "ERROR",
+          "message": "Missing required field: country_of_origin"
+        },
+        {
+          "field": "mrp",
+          "level": "ERROR",
+          "message": "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6"
+        },
+        {
+          "field": "mfg_date",
+          "level": "ERROR",
+          "message": "Manufacturing date missing - Legal Metrology requirement"
+        },
+        {
+          "field": "manufacturer_address",
+          "level": "ERROR",
+          "message": "Complete manufacturer address required - Legal Metrology Rule 7"
+        },
+        {
+          "field": "consumer_care",
+          "level": "ERROR",
+          "message": "Consumer care details required - Consumer Protection Act 2019"
+        }
+      ],
+      "is_compliant": false,
+      "score": 0.0
+    }
+  }
+]

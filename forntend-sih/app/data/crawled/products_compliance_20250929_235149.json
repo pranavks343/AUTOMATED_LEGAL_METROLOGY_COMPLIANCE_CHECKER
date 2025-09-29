@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Unknown Product",
+    "brand": null,
+    "price": 489.0,
+    "mrp": null,
+    "description": null,
+    "net_quantity": null,
+    "manufacturer": null,
+    "country_of_origin": null,
+    "mfg_date": null,
+    "expiry_date": null,
+    "platform": "amazon",
+    "seller": null,
+    "product_url": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo2MDAyOTk0MjAxMjY2NDUxOjE3NTkxNzAxMDY6c3BfYXRmOjMwMDY2MDUwMzA4MjIzMjo6MDo6&url=%2FLakme-Primer-Powder-Foundation-Compact%2Fdp%2FB0744RQRG8%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.XItYdNpo2vGP3sgb2oXx7saVaFMQ8SQKDrFo9QQTUlRv_s69ckGEuUuOKsAYIQJC9AO9P2lioKsNJn6Cvjf0IyzSej3Mcj4NsYymGLkZAFtQ_ZK7Whw17B2gq9ExX0Fa1CWOR8qoGhQHKjUxT-C9DIrbVM-U7pFGglo9ADJP_fJs0PS34Kxpx0BGLGZcUCcmvFQAm-4Yy01m7eGpfTqaAVZXmbPpHUXfz8jecIWhNUwPxxRq10pqvxZkmZjU9qp6SKwCGfSavNIJg4OdGnH3HIiTEpmps0dFJGdJGXd-HCg.F3a_VSKDSHL6Kz2YJmMSokTHbZ54Fz46ji1nMPrfCEU%26dib_tag%3Dse%26keywords%3Dcosmetics%26qid%3D1759170106%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=zMZpxhRHbY&sp_cr=ZAZ",
+    "image_urls": [
+      "https://m.media-amazon.com/images/I/51tVPK5ZsxL._AC_UL320_.jpg"
+    ],
+    "category": null,
+    "rating": 4.0,
+    "reviews_count": null,
+    "extracted_at": "2025-09-29 23:51:47",
+    "compliance_score": 0.0,
+    "compliance_status": "NON_COMPLIANT",
+    "issues_found": [
+      "Missing required field: net_quantity",
+      "Missing required field: unit",
+      "Missing required field: manufacturer_name",
+      "Missing required field: manufacturer_address",
+      "Missing required field: consumer_care",
+      "Missing required field: country_of_origin",
+      "MRP must explicitly state tax inclusivity (e.g., 'inclusive of all taxes') - Legal Metrology Rule 6",
+      "Manufacturing date missing - Legal Metrology requirement",
+      "Complete manufacturer address required - Legal Metrology Rule 7",
+      "Consumer care details required - Consumer Protection Act 2019"
+    ],
+    "validation_result": 

@@ -20,6 +20,16 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from pathlib import Path
 
+# Import compliance checking modules
+try:
+    from .schemas import ExtractedFields, ValidationResult, ValidationIssue
+    from .rules_engine import load_rules, validate
+    from .nlp_extract import extract_fields
+    COMPLIANCE_AVAILABLE = True
+except ImportError:
+    COMPLIANCE_AVAILABLE = False
+    logger.warning("Compliance modules not available, compliance checking disabled")
+
 logger = logging.getLogger(__name__)
 
 @dataclass
@@ -52,7 +62,10 @@ class ProductData:
     # Compliance metadata
     extracted_at: Optional[str] = None
     compliance_score: Optional[float] = None
+    compliance_status: Optional[str] = None  # COMPLIANT, NON_COMPLIANT, PARTIAL
     issues_found: List[str] = None
+    validation_result: Optional[ValidationResult] = None
+    compliance_details: Optional[Dict[str, Any]] = None
     
     def __post_init__(self):
         if self.image_urls is None:
@@ -65,6 +78,17 @@ class EcommerceCrawler:
     
     def __init__(self):
         """Initialize the e-commerce crawler with platform configurations"""
+        
+        # Load compliance rules if available
+        self.compliance_rules = None
+        if COMPLIANCE_AVAILABLE:
+            try:
+                self.compliance_rules = load_rules("app/data/rules/legal_metrology_rules.yaml")
+                logger.info("Compliance rules loaded successfully")
+            except FileNotFoundError:
+                logger.warning("Compliance rules file not found, compliance checking disabled")
+            except Exception as e:
+                logger.error(f"Error loading compliance rules: {e}")
         
         # Platform configurations
         self.platforms = {
@@ -126,6 +150,7 @@ class EcommerceCrawler:
         self.chrome_options.add_argument('--window-size=1920,1080')
         
         logger.info("EcommerceCrawler initialized with support for Amazon, Flipkart, Myntra, and Nykaa")
+        logger.info(f"Compliance checking: {'Enabled' if self.compliance_rules else 'Disabled'}")
     
     def _respect_rate_limit(self, platform: str):
         """Respect rate limiting for the platform"""
@@ -233,11 +258,38 @@ class EcommerceCrawler:
     def _extract_amazon_product(self, container) -> Optional[ProductData]:
         """Extract product data from Amazon product container"""
         try:
-            # Product title
-            title_elem = container.find('h2', class_='a-size-mini')
-            if not title_elem:
-                title_elem = container.find('span', class_='a-size-medium')
-            title = title_elem.get_text(strip=True) if title_elem else "Unknown Product"
+            # Product title - try multiple selectors for better compatibility
+            title = None
+            title_selectors = [
+                'h2[class*="a-size-mini"]',
+                'h2[class*="a-size-medium"]', 
+                'span[class*="a-size-medium"]',
+                'span[class*="a-size-base"]',
+                'h2 a span',
+                'h2 span',
+                'a[data-cy="title-recipe"]',
+                '.s-title-instructions-style h2',
+                '[data-cy="title-recipe"] span'
+            ]
+            
+            for selector in title_selectors:
+                title_elem = container.select_one(selector)
+                if title_elem:
+                    title = title_elem.get_text(strip=True)
+                    if title and len(title) > 3:  # Ensure we have a meaningful title
+                        break
+            
+            # Fallback: look for any h2 or span with substantial text
+            if not title:
+                for elem in container.find_all(['h2', 'span', 'a']):
+                    text = elem.get_text(strip=True)
+                    if text and len(text) > 10 and len(text) < 200:  # Reasonable title length
+                        title = text
+                        break
+            
+            # Final fallback
+            if not title:
+                title = "Product Title Not Found"
             
             # Product URL
             link_elem = container.find('a', class_='a-link-normal')
@@ -283,7 +335,7 @@ class EcommerceCrawler:
                     except ValueError:
                         pass
             
-            return ProductData(
+            product = ProductData(
                 title=title,
                 price=price,
                 mrp=mrp,
@@ -293,6 +345,11 @@ class EcommerceCrawler:
                 rating=rating,
                 extracted_at=time.strftime('%Y-%m-%d %H:%M:%S')
             )
+            
+            # Perform compliance check
+            self._perform_compliance_check(product)
+            
+            return product
             
         except Exception as e:
             logger.error(f"Failed to extract Amazon product data: {e}")
@@ -335,11 +392,40 @@ class EcommerceCrawler:
     def _extract_flipkart_product(self, container) -> Optional[ProductData]:
         """Extract product data from Flipkart product container"""
         try:
-            # Product title
-            title_elem = container.find('a', class_=re.compile('.*IRpwTa.*'))
-            if not title_elem:
-                title_elem = container.find('div', class_=re.compile('.*_4rR01T.*'))
-            title = title_elem.get_text(strip=True) if title_elem else "Unknown Product"
+            # Product title - try multiple selectors for Flipkart
+            title = None
+            title_selectors = [
+                'a[class*="IRpwTa"]',
+                'div[class*="_4rR01T"]',
+                'div[class*="_2WkVRV"]',
+                'a[class*="s1Q9rs"]',
+                'div[class*="_2mylT6"]',
+                'a[class*="_2mylT6"]',
+                'div[class*="s1Q9rs"]',
+                'a span',
+                'div[class*="_3pLy-c"] div'
+            ]
+            
+            for selector in title_selectors:
+                title_elem = container.select_one(selector)
+                if title_elem:
+                    title = title_elem.get_text(strip=True)
+                    if title and len(title) > 3:  # Ensure we have a meaningful title
+                        break
+            
+            # Fallback: look for any element with substantial text
+            if not title:
+                for elem in container.find_all(['a', 'div', 'span']):
+                    text = elem.get_text(strip=True)
+                    if text and len(text) > 10 and len(text) < 200:  # Reasonable title length
+                        # Skip price-related text
+                        if not re.search(r'₹|Rs\.|INR|\d+,\d+', text):
+                            title = text
+                            break
+            
+            # Final fallback
+            if not title:
+                title = "Flipkart Product Title Not Found"
             
             # Product URL
             product_url = None
@@ -363,7 +449,7 @@ class EcommerceCrawler:
             if img_elem and img_elem.get('src'):
                 image_urls.append(img_elem['src'])
             
-            return ProductData(
+            product = ProductData(
                 title=title,
                 price=price,
                 mrp=mrp,
@@ -372,6 +458,11 @@ class EcommerceCrawler:
                 platform='flipkart',
                 extracted_at=time.strftime('%Y-%m-%d %H:%M:%S')
             )
+            
+            # Perform compliance check
+            self._perform_compliance_check(product)
+            
+            return product
             
         except Exception as e:
             logger.error(f"Failed to extract Flipkart product data: {e}")
@@ -412,11 +503,39 @@ class EcommerceCrawler:
     def _extract_myntra_product(self, container) -> Optional[ProductData]:
         """Extract product data from Myntra product container"""
         try:
-            # Product title
-            title_elem = container.find('h3', class_='product-product')
-            if not title_elem:
-                title_elem = container.find('h4', class_='product-product')
-            title = title_elem.get_text(strip=True) if title_elem else "Unknown Product"
+            # Product title - try multiple selectors for Myntra
+            title = None
+            title_selectors = [
+                'h3[class*="product-product"]',
+                'h4[class*="product-product"]',
+                'div[class*="product-product"]',
+                'a[class*="product-product"]',
+                'span[class*="product-product"]',
+                '.product-product',
+                'h3',
+                'h4'
+            ]
+            
+            for selector in title_selectors:
+                title_elem = container.select_one(selector)
+                if title_elem:
+                    title = title_elem.get_text(strip=True)
+                    if title and len(title) > 3:  # Ensure we have a meaningful title
+                        break
+            
+            # Fallback: look for any element with substantial text
+            if not title:
+                for elem in container.find_all(['h3', 'h4', 'div', 'a', 'span']):
+                    text = elem.get_text(strip=True)
+                    if text and len(text) > 10 and len(text) < 200:  # Reasonable title length
+                        # Skip price-related text
+                        if not re.search(r'₹|Rs\.|INR|\d+,\d+', text):
+                            title = text
+                            break
+            
+            # Final fallback
+            if not title:
+                title = "Myntra Product Title Not Found"
             
             # Brand
             brand_elem = container.find('h3', class_='product-brand')
@@ -454,7 +573,7 @@ class EcommerceCrawler:
             if img_elem and img_elem.get('src'):
                 image_urls.append(img_elem['src'])
             
-            return ProductData(
+            product = ProductData(
                 title=title,
                 brand=brand,
                 price=price,
@@ -465,6 +584,11 @@ class EcommerceCrawler:
                 category='fashion',
                 extracted_at=time.strftime('%Y-%m-%d %H:%M:%S')
             )
+            
+            # Perform compliance check
+            self._perform_compliance_check(product)
+            
+            return product
             
         except Exception as e:
             logger.error(f"Failed to extract Myntra product data: {e}")
@@ -505,9 +629,39 @@ class EcommerceCrawler:
     def _extract_nykaa_product(self, container) -> Optional[ProductData]:
         """Extract product data from Nykaa product container"""
         try:
-            # Product title
-            title_elem = container.find('div', class_=re.compile('.*ProductTile-name.*'))
-            title = title_elem.get_text(strip=True) if title_elem else "Unknown Product"
+            # Product title - try multiple selectors for Nykaa
+            title = None
+            title_selectors = [
+                'div[class*="ProductTile-name"]',
+                'div[class*="product-name"]',
+                'div[class*="name"]',
+                'h3',
+                'h4',
+                'div[class*="title"]',
+                'a[class*="name"]',
+                'span[class*="name"]'
+            ]
+            
+            for selector in title_selectors:
+                title_elem = container.select_one(selector)
+                if title_elem:
+                    title = title_elem.get_text(strip=True)
+                    if title and len(title) > 3:  # Ensure we have a meaningful title
+                        break
+            
+            # Fallback: look for any element with substantial text
+            if not title:
+                for elem in container.find_all(['div', 'h3', 'h4', 'a', 'span']):
+                    text = elem.get_text(strip=True)
+                    if text and len(text) > 10 and len(text) < 200:  # Reasonable title length
+                        # Skip price-related text
+                        if not re.search(r'₹|Rs\.|INR|\d+,\d+', text):
+                            title = text
+                            break
+            
+            # Final fallback
+            if not title:
+                title = "Nykaa Product Title Not Found"
             
             # Brand
             brand_elem = container.find('div', class_=re.compile('.*ProductTile-brand.*'))
@@ -536,7 +690,7 @@ class EcommerceCrawler:
             if img_elem and img_elem.get('src'):
                 image_urls.append(img_elem['src'])
             
-            return ProductData(
+            product = ProductData(
                 title=title,
                 brand=brand,
                 price=price,
@@ -547,6 +701,11 @@ class EcommerceCrawler:
                 category='beauty',
                 extracted_at=time.strftime('%Y-%m-%d %H:%M:%S')
             )
+            
+            # Perform compliance check
+            self._perform_compliance_check(product)
+            
+            return product
             
         except Exception as e:
             logger.error(f"Failed to extract Nykaa product data: {e}")
@@ -689,7 +848,39 @@ class EcommerceCrawler:
             filepath = f"app/data/crawled_products_{timestamp}.json"
         
         # Convert to serializable format
-        products_data = [asdict(product) for product in products]
+        products_data = []
+        for product in products:
+            product_dict = asdict(product)
+            
+            # Handle ValidationResult serialization
+            if product_dict.get('validation_result'):
+                validation_result = product_dict['validation_result']
+                if hasattr(validation_result, '__dict__'):
+                    # Convert ValidationResult to dict
+                    product_dict['validation_result'] = {
+                        'is_compliant': validation_result.is_compliant,
+                        'score': validation_result.score,
+                        'issues': [
+                            {
+                                'field': issue.field,
+                                'level': issue.level,
+                                'message': issue.message
+                            } for issue in validation_result.issues
+                        ] if validation_result.issues else []
+                    }
+            
+            # Ensure all fields are JSON serializable
+            for key, value in product_dict.items():
+                if value is None or isinstance(value, (str, int, float, bool, list, dict)):
+                    continue
+                elif hasattr(value, '__dict__'):
+                    # Convert custom objects to dict
+                    product_dict[key] = value.__dict__ if hasattr(value, '__dict__') else str(value)
+                else:
+                    # Convert other non-serializable objects to string
+                    product_dict[key] = str(value)
+            
+            products_data.append(product_dict)
         
         # Create directory if it doesn't exist
         Path(filepath).parent.mkdir(parents=True, exist_ok=True)
@@ -710,6 +901,12 @@ class EcommerceCrawler:
             
             products = []
             for data in products_data:
+                # Handle ValidationResult deserialization
+                if 'validation_result' in data and data['validation_result']:
+                    # Skip validation_result for now as it's complex to reconstruct
+                    # The compliance_details should contain the necessary information
+                    data.pop('validation_result', None)
+                
                 products.append(ProductData(**data))
             
             logger.info(f"Loaded {len(products)} products from {filepath}")
@@ -726,15 +923,30 @@ class EcommerceCrawler:
             timestamp = time.strftime('%Y%m%d_%H%M%S')
             filepath = f"app/data/crawled_products_{timestamp}.csv"
         
-        # Convert to DataFrame
-        products_data = [asdict(product) for product in products]
-        df = pd.DataFrame(products_data)
+        # Convert to DataFrame with proper serialization
+        products_data = []
+        for product in products:
+            product_dict = asdict(product)
+            
+            # Remove ValidationResult as it's not CSV-friendly
+            product_dict.pop('validation_result', None)
+            
+            # Convert complex objects to strings
+            for key, value in product_dict.items():
+                if value is None:
+                    continue
+                elif isinstance(value, (str, int, float, bool)):
+                    continue
+                elif isinstance(value, list):
+                    product_dict[key] = '; '.join(str(v) for v in value) if value else ''
+                elif hasattr(value, '__dict__'):
+                    product_dict[key] = str(value)
+                else:
+                    product_dict[key] = str(value)
+            
+            products_data.append(product_dict)
         
-        # Handle list columns
-        if 'image_urls' in df.columns:
-            df['image_urls'] = df['image_urls'].apply(lambda x: '; '.join(x) if isinstance(x, list) else x)
-        if 'issues_found' in df.columns:
-            df['issues_found'] = df['issues_found'].apply(lambda x: '; '.join(x) if isinstance(x, list) else x)
+        df = pd.DataFrame(products_data)
         
         # Create directory if it doesn't exist
         Path(filepath).parent.mkdir(parents=True, exist_ok=True)
@@ -793,6 +1005,154 @@ class EcommerceCrawler:
             }
         
         return stats
+    
+    def _perform_compliance_check(self, product: ProductData) -> None:
+        """Perform compliance check on crawled product data"""
+        if not self.compliance_rules or not COMPLIANCE_AVAILABLE:
+            return
+        
+        try:
+            # Create text for NLP extraction from product data
+            product_text = self._create_product_text(product)
+            
+            # Extract fields using NLP
+            extracted_fields = extract_fields(product_text)
+            
+            # Perform validation
+            validation_result = validate(extracted_fields, self.compliance_rules)
+            
+            # Update product with compliance information
+            product.validation_result = validation_result
+            product.compliance_score = validation_result.score
+            product.compliance_status = self._determine_compliance_status(validation_result)
+            product.issues_found = [issue.message for issue in validation_result.issues]
+            
+            # Create compliance details
+            product.compliance_details = {
+                'extracted_fields': {
+                    'mrp_value': extracted_fields.mrp_value,
+                    'net_quantity_value': extracted_fields.net_quantity_value,
+                    'unit': extracted_fields.unit,
+                    'manufacturer_name': extracted_fields.manufacturer_name,
+                    'manufacturer_address': extracted_fields.manufacturer_address,
+                    'consumer_care': extracted_fields.consumer_care,
+                    'country_of_origin': extracted_fields.country_of_origin,
+                    'mfg_date': extracted_fields.mfg_date,
+                    'expiry_date': extracted_fields.expiry_date
+                },
+                'validation_issues': [
+                    {
+                        'field': issue.field,
+                        'level': issue.level,
+                        'message': issue.message
+                    } for issue in validation_result.issues
+                ],
+                'is_compliant': validation_result.is_compliant,
+                'score': validation_result.score
+            }
+            
+            logger.debug(f"Compliance check completed for {product.title}: Score {product.compliance_score}")
+            
+        except Exception as e:
+            logger.error(f"Error performing compliance check for {product.title}: {e}")
+            product.compliance_status = "ERROR"
+            product.compliance_score = 0
+            product.issues_found = [f"Compliance check failed: {str(e)}"]
+    
+    def _create_product_text(self, product: ProductData) -> str:
+        """Create text representation of product for NLP extraction"""
+        text_parts = []
+        
+        if product.title:
+            text_parts.append(f"Product: {product.title}")
+        
+        if product.description:
+            text_parts.append(f"Description: {product.description}")
+        
+        if product.brand:
+            text_parts.append(f"Brand: {product.brand}")
+        
+        if product.manufacturer:
+            text_parts.append(f"Manufacturer: {product.manufacturer}")
+        
+        if product.price:
+            text_parts.append(f"Price: ₹{product.price}")
+        
+        if product.mrp:
+            text_parts.append(f"MRP: ₹{product.mrp}")
+        
+        if product.net_quantity:
+            text_parts.append(f"Net Quantity: {product.net_quantity}")
+        
+        if product.country_of_origin:
+            text_parts.append(f"Country of Origin: {product.country_of_origin}")
+        
+        if product.mfg_date:
+            text_parts.append(f"Manufacturing Date: {product.mfg_date}")
+        
+        if product.expiry_date:
+            text_parts.append(f"Expiry Date: {product.expiry_date}")
+        
+        return " ".join(text_parts)
+    
+    def _determine_compliance_status(self, validation_result: ValidationResult) -> str:
+        """Determine overall compliance status based on validation result"""
+        if validation_result.is_compliant:
+            return "COMPLIANT"
+        elif validation_result.score >= 60:
+            return "PARTIAL"
+        else:
+            return "NON_COMPLIANT"
+    
+    def get_compliance_summary(self, products: List[ProductData]) -> Dict[str, Any]:
+        """Generate compliance summary for a list of products"""
+        if not products:
+            return {}
+        
+        total_products = len(products)
+        compliant_count = sum(1 for p in products if p.compliance_status == "COMPLIANT")
+        partial_count = sum(1 for p in products if p.compliance_status == "PARTIAL")
+        non_compliant_count = sum(1 for p in products if p.compliance_status == "NON_COMPLIANT")
+        
+        # Calculate average compliance score
+        scores = [p.compliance_score for p in products if p.compliance_score is not None]
+        avg_score = sum(scores) / len(scores) if scores else 0
+        
+        # Count issues by type
+        issue_counts = {}
+        for product in products:
+            if product.issues_found:
+                for issue in product.issues_found:
+                    issue_type = issue.split(':')[0] if ':' in issue else issue
+                    issue_counts[issue_type] = issue_counts.get(issue_type, 0) + 1
+        
+        # Platform-wise compliance
+        platform_compliance = {}
+        for product in products:
+            platform = product.platform or 'unknown'
+            if platform not in platform_compliance:
+                platform_compliance[platform] = {'total': 0, 'compliant': 0, 'avg_score': 0}
+            
+            platform_compliance[platform]['total'] += 1
+            if product.compliance_status == "COMPLIANT":
+                platform_compliance[platform]['compliant'] += 1
+        
+        # Calculate platform averages
+        for platform in platform_compliance:
+            platform_products = [p for p in products if p.platform == platform]
+            platform_scores = [p.compliance_score for p in platform_products if p.compliance_score is not None]
+            platform_compliance[platform]['avg_score'] = sum(platform_scores) / len(platform_scores) if platform_scores else 0
+        
+        return {
+            'total_products': total_products,
+            'compliant_products': compliant_count,
+            'partial_products': partial_count,
+            'non_compliant_products': non_compliant_count,
+            'compliance_rate': (compliant_count / total_products * 100) if total_products > 0 else 0,
+            'average_score': avg_score,
+            'issue_counts': issue_counts,
+            'platform_compliance': platform_compliance
+        }
 
 
 def demo_crawler():
